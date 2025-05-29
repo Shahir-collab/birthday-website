@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday Fidhu</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="header">
+    🌸 <h1>🎉 Happy Birthday Fidhu 🎉</h1> 🌸
+  </div>
+
+  <div class="center-container">
+    <!-- VEHICLES LEFT -->
+    <div class="vehicle-left">🚗 🚕 🚙 🛻 🚐</div>
+
+    <img src="birthday-boy.jpg" alt="Birthday Boy" class="birthday-img" />
+
+    <!-- VEHICLES RIGHT -->
+    <div class="vehicle-right">🚓 🚑 🚒 🚜 🚌</div>
+  </div>
+
+  <!-- Dancing Banana Conga Line -->
+  <div class="bananas">🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌</div>
+
+  <!-- Personal Birthday Message -->
+  <div class="birthday-message">
+    <p>Dear Fidhu,</p>
+    <p>Wishing you a day filled with laughter, love, and all the joy you bring to everyone around you! May this year bring you endless happiness, sweet surprises, and all your heart's desires. 🎂🎈</p>
+    <p>With love,</p>
+    <p><strong>Your favorite cousins and aunt 💖</strong></p>
+  </div>
+
+  <button class="music-btn" onclick="toggleMusic()">🔊 Play / Pause Music</button>
+  <audio id="birthdayMusic" autoplay loop>
+    <source src="chicken-banana.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>
+
+  <canvas id="confetti-canvas"></canvas>
+  <canvas id="heart-canvas"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>

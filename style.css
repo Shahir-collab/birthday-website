@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background: #fffaf0;
+  overflow-x: hidden;
+}
+
+.header {
+  text-align: center;
+  margin-top: 20px;
+  color: #ff1493;
+  font-size: 2.5rem;
+  text-shadow: 0 0 20px #ff69b4;
+  animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 10px #ff69b4; }
+  to { text-shadow: 0 0 20px #ff69b4, 0 0 30px #ff1493; }
+}
+
+.center-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 6px dashed #ff69b4;
+  border-radius: 25px;
+  padding: 20px;
+  margin: 40px auto 20px;
+  width: 90%;
+  max-width: 900px;
+  background: #fff0f5;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.birthday-img {
+  width: 280px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  z-index: 2;
+  margin: 10px 30px;
+}
+
+.bananas {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 20px;
+  animation: banana-dance 2s infinite ease-in-out;
+}
+
+@keyframes banana-dance {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(10px); }
+  100% { transform: translateY(0); }
+}
+
+.vehicle-left, .vehicle-right {
+  font-size: 3rem;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  animation: vehicle-wiggle 1.5s infinite alternate ease-in-out;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@keyframes vehicle-wiggle {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(5px) rotate(1deg); }
+}
+
+.music-btn {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background: #ff4081;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: none;
+  font-size: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  cursor: pointer;
+  z-index: 3;
+}
+
+.birthday-message {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 1.3rem;
+  color: #6a1b9a;
+  background: #ffe4f7;
+  padding: 20px;
+  border-radius: 20px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 15px rgba(255, 105, 180, 0.3);
+  animation: fade-in 2s ease-in;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+#confetti-canvas, #heart-canvas {
+  position: fixed;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
